@@ -1,0 +1,52 @@
+:root {
+  --bg: #0b1220;
+  --panel: #0f1724;
+  --muted: #9aa4b2;
+  --accent: #7dd3fc;
+  --card: #0b1320;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Roboto, system-ui, sans-serif;
+  background: linear-gradient(180deg,var(--bg), #071017);
+  color: #e6eef6;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  display:flex; align-items:center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left { flex: 1; }
+.right { width: 420px; }
+
+.card {
+  background: rgba(255,255,255,0.02);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.table th, .table td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.table tr { cursor: pointer; }
+.table tr:hover { background: rgba(255,255,255,0.02); }
